@@ -125,4 +125,10 @@
     return header;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *list = _dataSource2[indexPath.section];
+    NSString *name = list[indexPath.row];
+    NSLog(@"%@",name);
+}
 @end
